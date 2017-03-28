@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 
 # Create new Session
-driver = webdriver.Firefox(executable_path='drivers/geckodriver.exe')
+driver = webdriver.Firefox(executable_path='./drivers/geckodriver.exe')
 driver.implicitly_wait(30)
 driver.maximize_window()
 
