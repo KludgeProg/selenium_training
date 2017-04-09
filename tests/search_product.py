@@ -28,6 +28,7 @@ class SearchTest(unittest.TestCase):
         cls.title = cls.driver.title
 
     def test_search_by_category(self):
+        """ Searching Product by Category """
         # Click on Search Button
         self.search_button = self.driver.find_element_by_class_name("search")
         self.search_button.click()
@@ -53,6 +54,7 @@ class SearchTest(unittest.TestCase):
         self.assertNotEqual(products[0].text, "")
 
     def test_search_by_name(self):
+        """ Searching Product by Name """
         # Get the search textbox
         self.search_field = self.driver.find_element_by_name("keys")
         self.search_field.clear()
