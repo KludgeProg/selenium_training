@@ -182,3 +182,5 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 .idea/
+
+*.html

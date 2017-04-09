@@ -1,5 +1,5 @@
+import HtmlTestRunner
 import os
-import time
 import unittest
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -71,4 +71,4 @@ class HomePageTest(unittest.TestCase):
         return True
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='Ebay Homepage Test'))
