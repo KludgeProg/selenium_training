@@ -1,13 +1,14 @@
 import HtmlTestRunner
 import unittest
-from helpers.constants import firefox_driver
+from helpers.constants import drivers_folder
+from selenium import webdriver
 
 
 class HomePageTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Create a new Firefox Session
-        cls.driver = firefox_driver
+        cls.driver = webdriver.Firefox(executable_path='%s\%s' % (drivers_folder, 'geckodriver.exe'))
         cls.driver.implicitly_wait(30)
         cls.driver.maximize_window()
         # Navigate to the application home page
