@@ -18,9 +18,7 @@ smoke_tests = unittest.TestSuite([home_page_tests, search_tests])
 outfile = open(dir + "\SmokeTestReport.html", "w")
 
 # Configure the HtmlTestRunner options
-runner = HtmlTestRunner.HTMLTestRunner(
-    stream=outfile, report_title='Test Report', descriptions='Smoke Tests', output='Test Report'
-)
+runner = HtmlTestRunner.HTMLTestRunner(output='SmokeTests Report')
 
 # Run the suite
 runner.run(smoke_tests)
