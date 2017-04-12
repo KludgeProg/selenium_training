@@ -1,6 +1,6 @@
 import HtmlTestRunner
 import unittest
-from helpers.constants import drivers_folder
+from helper.constants import drivers_folder
 from selenium import webdriver
 
 
